@@ -20,6 +20,13 @@ export default class Calc {
     }
 
     public divide(): number {
+        this.divisionByZeroException();
         return this.number1 / this.number2;
+    }
+
+    private divisionByZeroException() {
+        if (this.number1 === 0 || this.number2 === 0) {
+            throw new Error("Division by Zero");
+        }
     }
 }
