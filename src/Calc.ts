@@ -18,4 +18,8 @@ export default class Calc {
     public multiply(): number {
         return this.number1 * this.number2;
     }
+
+    public divide(): number {
+        return this.number1 / this.number2;
+    }
 }
