@@ -33,3 +33,9 @@ test("should throw in cases of division by zero", () => {
     const calc = new Calc(20, 0);
     expect(() => calc.divide()).toThrow(new Error("Division by Zero"));
 });
+
+test("should exponentiate two values and return the result", () => {
+    const calc = new Calc(20, 2);
+    const exponentiate = calc.exponentiate();
+    expect(exponentiate).toBe(400);
+});
