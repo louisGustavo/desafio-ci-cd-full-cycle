@@ -22,3 +22,9 @@ test("should multiply two values and return the result", () => {
     const multiply = calc.multiply();
     expect(multiply).toBe(40);
 });
+
+test("should divide two values and return the result", () => {
+    const calc = new Calc(20, 2);
+    const divide = calc.divide();
+    expect(divide).toBe(10);
+});
