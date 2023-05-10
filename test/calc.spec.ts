@@ -28,3 +28,8 @@ test("should divide two values and return the result", () => {
     const divide = calc.divide();
     expect(divide).toBe(10);
 });
+
+test("should throw in cases of division by zero", () => {
+    const calc = new Calc(20, 0);
+    expect(() => calc.divide()).toThrow(new Error("Division by Zero"));
+});
