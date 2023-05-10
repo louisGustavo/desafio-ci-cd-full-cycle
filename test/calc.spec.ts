@@ -16,3 +16,9 @@ test("should subtract two values and return the result", () => {
     const subtract = calc.subtract();
     expect(subtract).toBe(8);
 });
+
+test("should multiply two values and return the result", () => {
+    const calc = new Calc(20, 2);
+    const multiply = calc.multiply();
+    expect(multiply).toBe(40);
+});
