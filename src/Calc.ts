@@ -29,4 +29,8 @@ export default class Calc {
             throw new Error("Division by Zero");
         }
     }
+
+    public exponentiate(): number {
+        return this.number1 ** this.number2;
+    }
 }
