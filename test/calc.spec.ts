@@ -10,3 +10,9 @@ test("should sum two values and return the result", () => {
     const sum = calc.sum();
     expect(sum).toBe(5);
 });
+
+test("should subtract two values and return the result", () => {
+    const calc = new Calc(10, 2);
+    const subtract = calc.subtract();
+    expect(subtract).toBe(8);
+});
