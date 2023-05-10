@@ -14,4 +14,8 @@ export default class Calc {
     public subtract(): number {
         return this.number1 - this.number2;
     }
+
+    public multiply(): number {
+        return this.number1 * this.number2;
+    }
 }
